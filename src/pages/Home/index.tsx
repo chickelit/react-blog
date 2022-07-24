@@ -1,4 +1,4 @@
-import { Navigation } from "../../components/Navigation";
+import { Navigation } from "Src/components/Navigation";
 import { StyledHome } from "./styles";
 
 export function Home() {

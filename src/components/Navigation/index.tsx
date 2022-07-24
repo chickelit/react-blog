@@ -1,10 +1,15 @@
-import { Container } from "../Container";
+import { Container } from "Src/components/Container";
+import { Logo } from "Src/components/Logo";
+import { NavigationItems } from "./Items";
 import { StyledNavigation } from "./styles";
 
 export function Navigation() {
   return (
     <Container>
-      <StyledNavigation>nav</StyledNavigation>
+      <StyledNavigation>
+        <Logo />
+        <NavigationItems />
+      </StyledNavigation>
     </Container>
   );
 }

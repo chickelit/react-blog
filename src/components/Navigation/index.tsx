@@ -1,15 +1,19 @@
-import { Container } from "Src/components/Container";
 import { Logo } from "Src/components/Logo";
+import { Button } from "../Button";
 import { NavigationItems } from "./Items";
-import { StyledNavigation } from "./styles";
+import { StyledNavigation, NavigationButtons, StyledContainer } from "./styles";
 
 export function Navigation() {
   return (
-    <Container>
+    <StyledContainer>
       <StyledNavigation>
         <Logo />
         <NavigationItems />
+        <NavigationButtons>
+          <Button light>Login</Button>
+          <Button>Sign up</Button>
+        </NavigationButtons>
       </StyledNavigation>
-    </Container>
+    </StyledContainer>
   );
 }

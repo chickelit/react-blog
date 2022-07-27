@@ -1,10 +1,13 @@
+import { EmailCapture } from "./EmailCapture";
 import { StyledHeader, StyledContainer } from "./styles";
+import { SupportingText } from "./SupportingText";
 
 export function Header() {
   return (
     <StyledContainer>
       <StyledHeader>
-        <h1>Vite blog</h1>
+        <SupportingText />
+        <EmailCapture />
       </StyledHeader>
     </StyledContainer>
   );

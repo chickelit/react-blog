@@ -21,3 +21,11 @@ export const StyledContainer = styled(Container, {
   borderBottom: theme.borderStyles.base.value,
   background: theme.colors.$backgroundDarker.value,
 });
+
+
+export const NavigationItems = styled("ul", {
+  display: "grid",
+  gridAutoColumns: "max-content",
+  gridAutoFlow: "column",
+  gap: "2rem",
+});

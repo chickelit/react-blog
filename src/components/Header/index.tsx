@@ -1,13 +1,21 @@
-import { EmailCapture } from "./EmailCapture";
-import { StyledHeader, StyledContainer } from "./styles";
-import { SupportingText } from "./SupportingText";
+import { Button } from "../Button";
+import { Input } from "../Input";
+import { StyledHeader, StyledContainer, SupportingText, EmailCapture } from "./styles";
 
 export function Header() {
   return (
     <StyledContainer>
       <StyledHeader>
-        <SupportingText />
-        <EmailCapture />
+        <SupportingText>
+          <h2>Vite blog</h2>
+          <p>
+            Tool and strategies modern teams need to help their companies grow.
+          </p>
+        </SupportingText>
+        <EmailCapture>
+          <Input placeholder="Enter your email" />
+          <Button>Get started</Button>
+        </EmailCapture>
       </StyledHeader>
     </StyledContainer>
   );

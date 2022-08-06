@@ -10,3 +10,25 @@ export const StyledContainer = styled(Container, {
   background: theme.colors.$backgroundDarker.value,
   padding: "8.25rem 7rem",
 });
+
+export const SupportingText = styled("div", {
+  display: "grid",
+  gap: "1.5rem",
+  h2: {
+    fontSize: "3rem",
+    fontWeight: 600,
+    color: theme.colors.$titleColor.value,
+  },
+  p: {
+    fontSize: "1.25rem",
+    fontWeight: 400,
+    color: theme.colors.$textColor.value,
+  },
+});
+
+export const EmailCapture = styled("form", {
+  maxWidth: "31.5rem",
+  display: "grid",
+  gridTemplateColumns: "1fr 8rem",
+  gap: "1rem",
+});

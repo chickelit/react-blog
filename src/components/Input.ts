@@ -5,5 +5,7 @@ export const Input = styled("input", {
   background: theme.colors.$background.value,
   border: theme.borderStyles.lighter.value,
   boxShadow: theme.shadows.light.value,
+  color: theme.colors.$textColor.value,
+  caretColor: theme.colors.$textColor.value,
   borderRadius: "0.5rem",
 });

@@ -8,7 +8,9 @@ export const { styled, theme } = createStitches({
       $textColor: "#667085",
       $textColorLighter: "#ffffff",
       $titleColor: "#101828",
+      $primaryDarker: "#6941c6",
       $primary: "#7f56d9",
+      $primaryLightest: "#f9f5ff",
     },
     borderStyles: {
       base: "1px solid #f2f4f7",

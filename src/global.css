@@ -8,7 +8,14 @@ h6 {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  outline: none;
+  border: none;
+  background: none;
   font-family: "Inter", sans-serif;
+}
+
+input {
+  overflow: hidden;
 }
 
 ul {

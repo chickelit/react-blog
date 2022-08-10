@@ -1,9 +1,6 @@
-import { Container } from "Src/components/Container";
 import { styled } from "Src/stitches.config";
 
 export const StyledHome = styled("div", {});
-
-export const MainSectionContainer = styled(Container, {});
 
 export const MainSection = styled("section", {
   padding: "6rem 2rem",

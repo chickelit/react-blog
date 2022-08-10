@@ -2,15 +2,19 @@ import { NavLink } from "react-router-dom";
 import { styled, theme } from "Src/stitches.config";
 
 export const StyledPost = styled("div", {
-  width: "26.25rem",
+  width: "100%",
   display: "grid",
   gridTemplateColumns: "1fr",
-  gridTemplateRows: "17.5rem max-content",
   gap: "2rem",
 });
 
 export const CoverContainer = styled("div", {
   position: "relative",
+  width: "100%",
+  aspectRatio: "3 / 2",
+  display: "grid",
+  gridTemplateColumns: "1fr",
+  gridTemplateRows: "1fr",
 });
 
 export const Cover = styled("img", {
@@ -28,9 +32,10 @@ export const LabelContainer = styled("div", {
     "linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.4) 100%)",
   borderTop: "1px solid rgba(255, 255, 255, 0.5)",
   backdropFilter: "blur(24px)",
-  padding: "1.5rem",
+  padding: "0 1.5rem",
   display: "grid",
   gridTemplateColumns: "1fr max-content",
+  alignItems: "center",
   justifyItems: "space-between",
 });
 

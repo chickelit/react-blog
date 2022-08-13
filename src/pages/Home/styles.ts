@@ -1,11 +1,9 @@
+import { Container } from "Src/components/Container";
 import { styled } from "Src/stitches.config";
 
-export const StyledHome = styled("div", {});
-
-export const MainSection = styled("section", {
-  padding: "6rem 2rem",
+export const StyledContainer = styled(Container, {
+  padding: "6rem 7rem",
   display: "grid",
   gridTemplateColumns: "17.5rem 1fr",
-  gridTemplateRows: "1fr",
   gap: "4rem",
 });

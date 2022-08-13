@@ -1,5 +1,5 @@
 import React from "react";
-import { NavLink, NavLinkProps } from "react-router-dom";
+import { NavLinkProps } from "react-router-dom";
 import { StyledCategory } from "./styles";
 
 interface IProps extends NavLinkProps {

@@ -1,14 +1,14 @@
 import { SearchInput } from "../SearchInput";
 import { Category } from "./Category";
-import { StyledCategoryList, StyledCategorySidebar } from "./styles";
+import { Categories, StyledSidebar } from "./styles";
 
-export function Categories() {
+export function Sidebar() {
   return (
-    <StyledCategorySidebar>
+    <StyledSidebar>
       <SearchInput placeholder="Search" />
       <div className="container">
         <h3>Blog categories</h3>
-        <StyledCategoryList>
+        <Categories>
           <Category to="" highlighted>View all</Category>
           <Category to="">Design</Category>
           <Category to="">Product</Category>
@@ -16,8 +16,8 @@ export function Categories() {
           <Category to="">Customer Success</Category>
           <Category to="">Leadership</Category>
           <Category to="">Management</Category>
-        </StyledCategoryList>
+        </Categories>
       </div>
-    </StyledCategorySidebar>
+    </StyledSidebar>
   );
 }

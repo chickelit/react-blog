@@ -1,6 +1,6 @@
 import { styled, theme } from "Src/stitches.config";
 
-export const StyledCategorySidebar = styled("nav", {
+export const StyledSidebar = styled("nav", {
   display: "grid",
   gridTemplateColumns: "1fr",
   gridTemplateRows: "max-content max-content",
@@ -18,7 +18,7 @@ export const StyledCategorySidebar = styled("nav", {
   },
 });
 
-export const StyledCategoryList = styled("ul", {
+export const Categories = styled("ul", {
   display: "grid",
   gridAutoRows: "max-content",
   gap: "0.5rem",

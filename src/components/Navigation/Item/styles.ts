@@ -4,6 +4,6 @@ export const StyledNavigationItem = styled("li", {
   a: {
     fontSize: "1rem",
     fontWeight: 500,
-    color: theme.colors.$textColor.value,
+    color: theme.colors.$gray500.value,
   },
 });

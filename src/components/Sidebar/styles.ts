@@ -13,7 +13,7 @@ export const StyledSidebar = styled("nav", {
     h3: {
       fontSize: "0.875rem",
       fontWeight: 600,
-      color: theme.colors.$primary.value,
+      color: theme.colors.$primary700.value,
     },
   },
 });

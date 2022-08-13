@@ -3,6 +3,7 @@ import { Header } from "Src/components/Header";
 import { StyledContainer } from "./styles";
 import { Sidebar } from "Src/components/Sidebar";
 import { Posts } from "Src/components/Posts";
+import { Pagination } from "Src/components/Pagination";
 
 export function Home() {
   return (
@@ -10,8 +11,9 @@ export function Home() {
       <Navigation />
       <Header />
       <StyledContainer>
-        <Sidebar />
-        <Posts />
+        <Sidebar id="sidebar" />
+        <Posts id="posts" />
+        <Pagination id="pagination" />
       </StyledContainer>
     </div>
   );

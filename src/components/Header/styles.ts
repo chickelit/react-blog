@@ -7,7 +7,7 @@ export const StyledHeader = styled("header", {
 });
 
 export const StyledContainer = styled(Container, {
-  background: theme.colors.$backgroundDarker.value,
+  background: theme.colors.$gray50.value,
   padding: "8.25rem 7rem",
 });
 
@@ -17,12 +17,12 @@ export const SupportingText = styled("div", {
   h2: {
     fontSize: "3rem",
     fontWeight: 600,
-    color: theme.colors.$titleColor.value,
+    color: theme.colors.$gray900.value,
   },
   p: {
     fontSize: "1.25rem",
     fontWeight: 400,
-    color: theme.colors.$textColor.value,
+    color: theme.colors.$gray500.value,
   },
 });
 

@@ -41,13 +41,13 @@ export const LabelContainer = styled("div", {
 
 export const Label = styled("div", {
   "p.author": {
-    color: theme.colors.$textColorLighter.value,
+    color: theme.colors.$white.value,
     fontWeight: 600,
     fontSize: "0.875rem",
     lineHeight: "1.25rem",
   },
   "p.created-at": {
-    color: theme.colors.$textColorLighter.value,
+    color: theme.colors.$white.value,
     fontWeight: 400,
     fontSize: "0.875rem",
     lineHeight: "1.25rem",
@@ -55,7 +55,7 @@ export const Label = styled("div", {
 });
 
 export const Category = styled("p", {
-  color: theme.colors.$textColorLighter.value,
+  color: theme.colors.$white.value,
   fontWeight: 600,
   fontSize: "0.875rem",
   lineHeight: "1.25rem",
@@ -71,7 +71,7 @@ export const Content = styled("div", {
     lineHeight: "2rem",
   },
   "p.description": {
-    color: theme.colors.$textColor.value,
+    color: theme.colors.$gray500.value,
     fontWeight: 400,
     fontSize: "1rem",
     lineHeight: "1.5rem",
@@ -82,7 +82,7 @@ export const ReadPost = styled(NavLink, {
   fontWeight: 500,
   fontSize: "1rem",
   lineHeight: "1.5rem",
-  color: theme.colors.$primaryDarker.value,
+  color: theme.colors.$primary700.value,
   display: "grid",
   gridTemplateColumns: "max-content max-content",
   gap: "0.875rem",

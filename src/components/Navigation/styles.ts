@@ -18,8 +18,8 @@ export const NavigationButtons = styled("div", {
 });
 
 export const StyledContainer = styled(Container, {
-  borderBottom: theme.borderStyles.base.value,
-  background: theme.colors.$backgroundDarker.value,
+  borderBottom: theme.borderStyles.gray100.value,
+  background: theme.colors.$gray50.value,
 });
 
 

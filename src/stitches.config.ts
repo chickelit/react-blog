@@ -3,21 +3,22 @@ import { createStitches } from "@stitches/react";
 export const { styled, theme } = createStitches({
   theme: {
     colors: {
-      $background: "#ffffff",
-      $backgroundDarker: "#f9fafb",
-      $textColor: "#667085",
-      $textColorLighter: "#ffffff",
-      $titleColor: "#101828",
-      $primaryDarker: "#6941c6",
-      $primary: "#7f56d9",
-      $primaryLightest: "#f9f5ff",
+      $white: "#ffffff",
+      $gray50: "#f9fafb",
+      $gray500: "#667085",
+      $gray700: "#344054",
+      $gray900: "#101828",
+      $primary50: "#f9f5ff",
+      $primary600: "#7f56d9",
+      $primary700: "#6941c6",
     },
     borderStyles: {
-      base: "1px solid #f2f4f7",
-      lighter: "1px solid #d0d5dd",
+      gray100: "1px solid #f2f4f7",
+      gray200: "1px solid #eaecf0",
+      gray300: "1px solid #d0d5dd",
     },
     shadows: {
-      light: "0 1px 2px rgba(16, 24, 40, 0.05)",
+      xs: "0 1px 2px rgba(16, 24, 40, 0.05)",
     },
   },
 });

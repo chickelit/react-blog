@@ -1,15 +1,18 @@
+import { BaseHTMLAttributes } from "react";
 import { SearchInput } from "../SearchInput";
 import { Category } from "./Category";
 import { Categories, StyledSidebar } from "./styles";
 
-export function Sidebar() {
+export function Sidebar(props: BaseHTMLAttributes<HTMLElement>) {
   return (
-    <StyledSidebar>
+    <StyledSidebar {...props}>
       <SearchInput placeholder="Search" />
       <div className="container">
         <h3>Blog categories</h3>
         <Categories>
-          <Category to="" highlighted>View all</Category>
+          <Category to="" highlighted>
+            View all
+          </Category>
           <Category to="">Design</Category>
           <Category to="">Product</Category>
           <Category to="">Software Development</Category>

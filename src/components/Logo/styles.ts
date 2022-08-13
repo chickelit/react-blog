@@ -7,7 +7,7 @@ export const StyledLogo = styled("div", {
   alignItems: "center",
   gap: "0.625rem",
   h1: {
-    color: theme.colors.$titleColor.value,
+    color: theme.colors.$gray900.value,
     fontSize: "1.25rem",
   },
 });

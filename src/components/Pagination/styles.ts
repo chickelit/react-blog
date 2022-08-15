@@ -7,7 +7,7 @@ export const StyledPagination = styled("nav", {
   padding: "1.25rem 0 0",
   display: "grid",
   gridTemplateColumns: "max-content 1fr max-content",
-  justifyItems: "space-between",
+  justifyItems: "center",
 });
 
 export const StyledNavLink = styled(NavLink, {
@@ -23,4 +23,12 @@ export const StyledNavLink = styled(NavLink, {
   gridTemplateColumns: "max-content max-content",
   gap: "0.5rem",
   alignItems: "center",
+});
+
+export const Pages = styled("ul", {
+  display: "grid",
+  gridAutoColumns: "2.5rem",
+  gridTemplateRows: "2.5rem",
+  gridAutoFlow: "column",
+  gap: "0.125rem",
 });

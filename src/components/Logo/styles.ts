@@ -10,4 +10,13 @@ export const StyledLogo = styled("div", {
     color: theme.colors.$gray900.value,
     fontSize: "1.25rem",
   },
+  variants: {
+    light: {
+      true: {
+        h1: {
+          color: theme.colors.$white.value,
+        },
+      },
+    },
+  },
 });

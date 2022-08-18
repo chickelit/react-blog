@@ -1,14 +1,13 @@
 import { styled, theme } from "Src/stitches.config";
-import { Container } from "../Container";
 
 export const StyledHeader = styled("header", {
-  display: "grid",
-  gap: "2.5rem",
+  background: theme.colors.$gray50.value,
 });
 
-export const StyledContainer = styled(Container, {
-  background: theme.colors.$gray50.value,
-  padding: "8.25rem 7rem",
+export const Wrapper = styled("div", {
+  padding: "8.25rem 2rem",
+  display: "grid",
+  gap: "2.5rem",
 });
 
 export const SupportingText = styled("div", {

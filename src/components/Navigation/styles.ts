@@ -1,8 +1,14 @@
 import { styled, theme } from "Src/stitches.config";
-import { Container } from "../Container";
 
 export const StyledNavigation = styled("nav", {
   height: "5rem",
+  borderBottom: theme.borderStyles.gray100.value,
+  background: theme.colors.$gray50.value,
+  display: "grid",
+  alignItems: "center",
+});
+
+export const Wrapper = styled("div", {
   padding: "0 2rem",
   display: "grid",
   gridTemplateColumns: "max-content 1fr max-content",
@@ -16,12 +22,6 @@ export const NavigationButtons = styled("div", {
   gridAutoFlow: "column",
   gap: "0.75rem",
 });
-
-export const StyledContainer = styled(Container, {
-  borderBottom: theme.borderStyles.gray100.value,
-  background: theme.colors.$gray50.value,
-});
-
 
 export const NavigationItems = styled("ul", {
   display: "grid",

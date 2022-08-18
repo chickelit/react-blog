@@ -1,8 +1,12 @@
 import { StyledLogo } from "./styles";
 
-export function Logo() {
+interface IProps {
+  light?: boolean;
+}
+
+export function Logo({ light }: IProps) {
   return (
-    <StyledLogo>
+    <StyledLogo light={light}>
       <img src="/vite.svg" alt="Logo" />
       <h1>Logo</h1>
     </StyledLogo>

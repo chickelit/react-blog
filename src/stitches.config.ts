@@ -5,6 +5,7 @@ export const { styled, theme } = createStitches({
     colors: {
       $white: "#ffffff",
       $gray50: "#f9fafb",
+      $gray400: "#98a2b3",
       $gray500: "#667085",
       $gray700: "#344054",
       $gray800: "#1d2939",

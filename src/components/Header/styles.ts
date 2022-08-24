@@ -4,7 +4,7 @@ export const StyledHeader = styled("header", {
   background: theme.colors.$gray50.value,
 });
 
-export const Wrapper = styled("div", {
+export const Grid = styled("div", {
   padding: "8.25rem 2rem",
   display: "grid",
   gap: "2.5rem",

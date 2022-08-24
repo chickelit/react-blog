@@ -1,6 +1,6 @@
 import { styled, theme } from "Src/stitches.config";
 
-export const StyledNavigationItem = styled("li", {
+export const StyledNavItem = styled("li", {
   a: {
     fontSize: "1rem",
     fontWeight: 500,

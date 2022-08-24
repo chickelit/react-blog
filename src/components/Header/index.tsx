@@ -1,13 +1,13 @@
 import { Button } from "../Button";
 import { Container } from "../Container";
 import { Input } from "../Input";
-import { StyledHeader, SupportingText, EmailCapture, Wrapper } from "./styles";
+import { StyledHeader, SupportingText, EmailCapture, Grid } from "./styles";
 
-export function Header() {
+export const Header: React.FC = () => {
   return (
     <StyledHeader>
       <Container>
-        <Wrapper>
+        <Grid>
           <SupportingText>
             <h2>Vite blog</h2>
             <p>
@@ -19,7 +19,7 @@ export function Header() {
             <Input placeholder="Enter your email" />
             <Button>Get started</Button>
           </EmailCapture>
-        </Wrapper>
+        </Grid>
       </Container>
     </StyledHeader>
   );

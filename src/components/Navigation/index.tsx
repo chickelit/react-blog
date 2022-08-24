@@ -1,26 +1,26 @@
 import { Logo } from "Src/components/Logo";
 import { Button } from "../Button";
 import { Container } from "../Container";
-import { NavigationItem } from "./Item";
-import { StyledNavigation, NavigationButtons, NavigationItems, Wrapper } from "./styles";
+import { NavItem } from "./Item";
+import { StyledNavigation, Buttons, NavItems, Grid } from "./styles";
 
-export function Navigation() {
+export const Navigation: React.FC = () => {
   return (
     <StyledNavigation>
       <Container>
-        <Wrapper>
+        <Grid>
           <Logo />
-          <NavigationItems>
-            <NavigationItem to="/">Home</NavigationItem>
-            <NavigationItem to="/">Resources</NavigationItem>
-            <NavigationItem to="/">Resources</NavigationItem>
-            <NavigationItem to="/">Pricing</NavigationItem>
-          </NavigationItems>
-          <NavigationButtons>
-            <Button light>Login</Button>
+          <NavItems>
+            <NavItem to="/">Home</NavItem>
+            <NavItem to="/">Resources</NavItem>
+            <NavItem to="/">Resources</NavItem>
+            <NavItem to="/">Pricing</NavItem>
+          </NavItems>
+          <Buttons>
+            <Button theme={"light"}>Login</Button>
             <Button>Sign up</Button>
-          </NavigationButtons>
-        </Wrapper>
+          </Buttons>
+        </Grid>
       </Container>
     </StyledNavigation>
   );

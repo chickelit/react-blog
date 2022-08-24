@@ -8,7 +8,7 @@ export const StyledNavigation = styled("nav", {
   alignItems: "center",
 });
 
-export const Wrapper = styled("div", {
+export const Grid = styled("div", {
   padding: "0 2rem",
   display: "grid",
   gridTemplateColumns: "max-content 1fr max-content",
@@ -16,14 +16,14 @@ export const Wrapper = styled("div", {
   gap: "2.625rem",
 });
 
-export const NavigationButtons = styled("div", {
+export const Buttons = styled("div", {
   display: "grid",
   gridAutoColumns: "max-content",
   gridAutoFlow: "column",
   gap: "0.75rem",
 });
 
-export const NavigationItems = styled("ul", {
+export const NavItems = styled("ul", {
   display: "grid",
   gridAutoColumns: "max-content",
   gridAutoFlow: "column",

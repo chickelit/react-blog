@@ -4,22 +4,23 @@ import { Sidebar } from "Src/components/Sidebar";
 import { Posts } from "Src/components/Posts";
 import { Pagination } from "Src/components/Pagination";
 import { Footer } from "Src/components/Footer";
+import { Grid, StyledHome } from "./styles";
 import { Container } from "Src/components/Container";
-import { Wrapper } from "./styles";
+import React from "react";
 
-export function Home() {
+export const HomePage: React.FC = () => {
   return (
-    <div>
+    <StyledHome>
       <Navigation />
       <Header />
       <Container>
-        <Wrapper>
+        <Grid>
           <Sidebar id="sidebar" />
           <Posts id="posts" />
           <Pagination id="pagination" />
-        </Wrapper>
+        </Grid>
       </Container>
       <Footer />
-    </div>
+    </StyledHome>
   );
-}
+};

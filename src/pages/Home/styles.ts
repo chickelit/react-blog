@@ -1,6 +1,12 @@
 import { styled } from "Src/stitches.config";
 
-export const Wrapper = styled("section", {
+export const StyledHome = styled("div", {
+  display: "grid",
+  gridTemplateColumns: "1fr",
+  gridAutoRows: "max-content",
+});
+
+export const Grid = styled("div", {
   padding: "6rem 2rem",
   display: "grid",
   gridTemplateColumns: "17.5rem 1fr",

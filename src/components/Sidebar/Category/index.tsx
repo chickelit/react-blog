@@ -1,14 +1,16 @@
 import React from "react";
 import { NavLinkProps } from "react-router-dom";
-import { StyledCategory } from "./styles";
+import { StyledCategory, StyledCategoryTheme } from "./styles";
 
 interface IProps extends NavLinkProps {
-  highlighted?: boolean
+  theme?: StyledCategoryTheme;
   children: React.ReactNode;
 }
 
-export function Category({ children, highlighted, ...rest }: IProps) {
+export function Category({ children, ...rest }: IProps) {
   return (
-      <StyledCategory {...rest} to="" highlighted={highlighted}>{children}</StyledCategory>
+    <StyledCategory {...rest} to="">
+      {children}
+    </StyledCategory>
   );
 }

@@ -1,9 +1,5 @@
 import { styled, theme } from "Src/stitches.config";
 
-export const StyledHeader = styled("header", {
-  background: theme.colors.$gray50.value,
-});
-
 export const Grid = styled("div", {
   padding: "8.25rem 2rem",
   display: "grid",
@@ -19,6 +15,7 @@ export const SupportingText = styled("div", {
     color: theme.colors.$gray900.value,
   },
   p: {
+    wordBreak: "keep-all",
     fontSize: "1.25rem",
     fontWeight: 400,
     color: theme.colors.$gray500.value,
@@ -30,4 +27,17 @@ export const EmailCapture = styled("form", {
   display: "grid",
   gridTemplateColumns: "1fr 8rem",
   gap: "1rem",
+});
+
+export const StyledHeader = styled("header", {
+  background: theme.colors.$gray50.value,
+  "@max768": {
+    [`& ${Grid}`]: {
+      padding: "4rem 1rem",
+      [`${EmailCapture}`]: {
+        gridTemplateColumns: "1fr",
+        gridAutoRows: "max-content",
+      },
+    },
+  },
 });

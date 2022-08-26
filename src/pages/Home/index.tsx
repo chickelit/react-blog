@@ -13,14 +13,14 @@ export const HomePage: React.FC = () => {
     <StyledHome>
       <Navigation />
       <Header />
-      <Container>
+      {/* <Container>
         <Grid>
           <Sidebar id="sidebar" />
           <Posts id="posts" />
           <Pagination id="pagination" />
         </Grid>
       </Container>
-      <Footer />
+      <Footer /> */}
     </StyledHome>
   );
 };

@@ -23,4 +23,11 @@ export const { styled, theme } = createStitches({
       xs: "0 1px 2px rgba(16, 24, 40, 0.05)",
     },
   },
+  media: {
+    max480: "(max-width: 480px)",
+    max768: "(max-width: 768px)",
+    max1024: "(max-width: 1024px)",
+    max1200: "(max-width: 1200px)",
+    infinite: "(min-width: 1201px)"
+  }
 });

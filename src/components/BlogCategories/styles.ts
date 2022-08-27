@@ -1,10 +1,16 @@
 import { styled, theme } from "Src/stitches.config";
+import { StyledSearchInput } from "../SearchInput/styles";
 
-export const StyledSidebar = styled("nav", {
+export const StyledBlogCategories = styled("nav", {
   display: "grid",
   gridTemplateColumns: "1fr",
   gridTemplateRows: "max-content max-content",
   gap: "2rem",
+  "@max1024": {
+    [`& ${StyledSearchInput}`]: {
+      display: "none",
+    },
+  },
 });
 
 export const Grid = styled("div", {

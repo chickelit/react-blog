@@ -1,11 +1,5 @@
 import { styled } from "Src/stitches.config";
 
-export const StyledHome = styled("div", {
-  display: "grid",
-  gridTemplateColumns: "1fr",
-  gridAutoRows: "max-content",
-});
-
 export const Grid = styled("div", {
   padding: "6rem 2rem",
   display: "grid",
@@ -21,5 +15,18 @@ export const Grid = styled("div", {
   },
   "#pagination": {
     gridArea: "pagination",
+  },
+});
+
+export const StyledHome = styled("div", {
+  display: "grid",
+  gridTemplateColumns: "1fr",
+  gridAutoRows: "max-content",
+  "@max768": {
+    [`& ${Grid}`]: {
+      padding: "4rem 1rem",
+      gridTemplateColumns: "1fr",
+      gridTemplateAreas: `"sidebar" "posts" "pagination"`,
+    },
   },
 });

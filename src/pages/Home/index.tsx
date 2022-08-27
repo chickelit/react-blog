@@ -1,6 +1,6 @@
 import { Navigation } from "Src/components/Navigation";
 import { Header } from "Src/components/Header";
-import { Sidebar } from "Src/components/Sidebar";
+import { Sidebar } from "Src/components/BlogCategories";
 import { Posts } from "Src/components/Posts";
 import { Pagination } from "Src/components/Pagination";
 import { Footer } from "Src/components/Footer";
@@ -13,14 +13,14 @@ export const HomePage: React.FC = () => {
     <StyledHome>
       <Navigation />
       <Header />
-      {/* <Container>
+      <Container>
         <Grid>
           <Sidebar id="sidebar" />
           <Posts id="posts" />
           <Pagination id="pagination" />
         </Grid>
       </Container>
-      <Footer /> */}
+      <Footer />
     </StyledHome>
   );
 };

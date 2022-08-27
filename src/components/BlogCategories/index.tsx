@@ -1,11 +1,11 @@
 import { BaseHTMLAttributes } from "react";
 import { SearchInput } from "../SearchInput";
 import { Category } from "./Category";
-import { Categories, StyledSidebar, Grid } from "./styles";
+import { Categories, StyledBlogCategories, Grid } from "./styles";
 
 export const Sidebar: React.FC<BaseHTMLAttributes<HTMLElement>> = (props) => {
   return (
-    <StyledSidebar {...props}>
+    <StyledBlogCategories {...props}>
       <SearchInput placeholder="Search" />
       <Grid>
         <h3>Blog categories</h3>
@@ -21,6 +21,6 @@ export const Sidebar: React.FC<BaseHTMLAttributes<HTMLElement>> = (props) => {
           <Category to="">Management</Category>
         </Categories>
       </Grid>
-    </StyledSidebar>
+    </StyledBlogCategories>
   );
 }

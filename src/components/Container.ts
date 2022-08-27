@@ -5,7 +5,7 @@ export const Container = styled("div", {
   display: "grid",
   gridTemplateColumns: "1fr",
   justifyContent: "center",
-  "@max768": {
+  "@max1024": {
     padding: "0",
   },
 });

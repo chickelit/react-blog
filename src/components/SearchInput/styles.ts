@@ -3,7 +3,7 @@ import { styled, theme } from "Src/stitches.config";
 export const StyledSearchInput = styled("div", {
   height: "max-content",
   padding: "0.75rem 0.875rem",
-  background: theme.colors.$white.value,
+  background: "$white",
   border: theme.borderStyles.gray200.value,
   boxShadow: theme.shadows.xs.value,
   borderRadius: "0.5rem",
@@ -13,10 +13,9 @@ export const StyledSearchInput = styled("div", {
   gap: "0.65rem",
   alignItems: "center",
   input: {
-    height: "1.15rem",
-    lineHeight: "1.15rem",
-    color: theme.colors.$gray500.value,
-    caretColor: theme.colors.$gray500.value,
+    typography: "text-md-normal",
+    color: "$gray500",
+    caretColor: "$gray500",
   },
 });
 
@@ -28,6 +27,6 @@ export const SearchButton = styled("button", {
   svg: {
     width: "100%",
     height: "100%",
-    color: theme.colors.$gray500.value,
+    color: "$gray500",
   },
 });

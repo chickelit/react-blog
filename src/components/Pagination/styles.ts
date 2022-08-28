@@ -6,10 +6,8 @@ export const PaginationButton = styled(NavLink, {
   padding: "0.5rem 0.875rem",
   boxShadow: theme.shadows.xs.value,
   borderRadius: "0.5rem",
-  fontWeight: 500,
-  fontSize: "0.875rem",
-  lineHeight: "1.25rem",
-  color: theme.colors.$gray700.value,
+  typography: "text-sm-semibold",
+  color: "$gray700",
   display: "grid",
   gridTemplateColumns: "max-content max-content",
   gap: "0.5rem",
@@ -25,10 +23,8 @@ export const Pages = styled("ul", {
 });
 
 export const CurrentPageLabel = styled("p", {
-  color: theme.colors.$gray700.value,
-  fontWeight: 400,
-  fontSize: "0.875rem",
-  lineHeight: "1.25rem",
+  color: "$gray700",
+  typography: "text-sm-medium",
 });
 
 export const StyledPagination = styled("nav", {
@@ -41,7 +37,7 @@ export const StyledPagination = styled("nav", {
   [`& ${CurrentPageLabel}`]: {
     display: "none",
   },
-  "@max1024": {
+  "@max768": {
     [`& ${PaginationButton}`]: {
       gridTemplateColumns: "1fr",
       p: {

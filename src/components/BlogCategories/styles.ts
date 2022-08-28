@@ -1,4 +1,4 @@
-import { styled, theme } from "Src/stitches.config";
+import { styled } from "Src/stitches.config";
 import { StyledSearchInput } from "../SearchInput/styles";
 
 export const StyledBlogCategories = styled("nav", {
@@ -19,9 +19,8 @@ export const Grid = styled("div", {
   gridAutoRows: "max-content",
   gap: "1.25rem",
   h3: {
-    fontSize: "0.875rem",
-    fontWeight: 600,
-    color: theme.colors.$primary700.value,
+    typography: "text-sm-semibold",
+    color: "$primary700",
   },
 });
 

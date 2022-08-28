@@ -1,4 +1,4 @@
-import { styled, theme } from "Src/stitches.config";
+import { styled } from "Src/stitches.config";
 
 export const StyledLogo = styled("div", {
   width: "max-content",
@@ -7,14 +7,14 @@ export const StyledLogo = styled("div", {
   alignItems: "center",
   gap: "0.625rem",
   h1: {
-    color: theme.colors.$gray900.value,
+    color: "$gray900",
     fontSize: "1.25rem",
   },
   variants: {
     light: {
       true: {
         h1: {
-          color: theme.colors.$white.value,
+          color: "$white",
         },
       },
     },

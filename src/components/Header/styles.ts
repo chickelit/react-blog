@@ -1,4 +1,4 @@
-import { styled, theme } from "Src/stitches.config";
+import { styled } from "Src/stitches.config";
 
 export const Grid = styled("div", {
   padding: "8.25rem 2rem",
@@ -10,15 +10,13 @@ export const SupportingText = styled("div", {
   display: "grid",
   gap: "1.5rem",
   h2: {
-    fontSize: "3rem",
-    fontWeight: 600,
-    color: theme.colors.$gray900.value,
+    typography: "display-lg-semibold",
+    color: "$gray900",
   },
   p: {
     wordBreak: "keep-all",
-    fontSize: "1.25rem",
-    fontWeight: 400,
-    color: theme.colors.$gray500.value,
+    typography: "text-x1-normal",
+    color: "$gray500",
   },
 });
 
@@ -30,7 +28,7 @@ export const EmailCapture = styled("form", {
 });
 
 export const StyledHeader = styled("header", {
-  background: theme.colors.$gray50.value,
+  background: "$gray50",
   "@max768": {
     [`& ${Grid}`]: {
       padding: "4rem 1rem",

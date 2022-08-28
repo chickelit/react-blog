@@ -1,5 +1,5 @@
 import { NavLink } from "react-router-dom";
-import { styled, theme } from "Src/stitches.config";
+import { styled } from "Src/stitches.config";
 
 export const StyledPost = styled("div", {
   width: "100%",
@@ -34,31 +34,31 @@ export const LabelContainer = styled("div", {
   backdropFilter: "blur(24px)",
   padding: "0 1.5rem",
   display: "grid",
-  gridTemplateColumns: "1fr max-content",
   alignItems: "center",
-  justifyItems: "space-between",
 });
 
 export const Label = styled("div", {
   "p.author": {
-    color: theme.colors.$white.value,
-    fontWeight: 600,
-    fontSize: "0.875rem",
-    lineHeight: "1.25rem",
+    color: "$white",
+    typography: "text-sm-semibold",
+    gridArea: "author",
   },
   "p.created-at": {
-    color: theme.colors.$white.value,
-    fontWeight: 400,
-    fontSize: "0.875rem",
-    lineHeight: "1.25rem",
+    color: "$white",
+    typography: "text-sm-normal",
+    gridArea: "created-at",
   },
-});
-
-export const Category = styled("p", {
-  color: theme.colors.$white.value,
-  fontWeight: 600,
-  fontSize: "0.875rem",
-  lineHeight: "1.25rem",
+  "p.category": {
+    color: "$white",
+    typography: "text-sm-semibold",
+    gridArea: "category",
+  },
+  display: "grid",
+  gridTemplateColumns: "1fr max-content",
+  gridTemplateRows: "max-content max-content",
+  gridTemplateAreas: `"author category" "created-at ."`,
+  alignItems: "center",
+  justifyItems: "space-between",
 });
 
 export const Content = styled("div", {
@@ -66,23 +66,17 @@ export const Content = styled("div", {
   width: "100%",
   gap: "0.75rem",
   "h3.title": {
-    fontWeight: 600,
-    fontSize: "1.5rem",
-    lineHeight: "2rem",
+    typography: "display-xs-semibold",
   },
   "p.description": {
-    color: theme.colors.$gray500.value,
-    fontWeight: 400,
-    fontSize: "1rem",
-    lineHeight: "1.5rem",
+    color: "$gray500",
+    typography: "text-md-normal",
   },
 });
 
 export const ReadPost = styled(NavLink, {
-  fontWeight: 500,
-  fontSize: "1rem",
-  lineHeight: "1.5rem",
-  color: theme.colors.$primary700.value,
+  typography: "text-md-semibold",
+  color: "$primary700",
   display: "grid",
   gridTemplateColumns: "max-content max-content",
   gap: "0.875rem",

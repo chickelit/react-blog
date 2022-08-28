@@ -1,17 +1,18 @@
 import { NavLink } from "react-router-dom";
-import { styled, theme } from "Src/stitches.config";
+import { styled } from "Src/stitches.config";
 
 export const StyledCategory = styled(NavLink, {
   padding: "0.625rem 0.875rem",
+  typography: "text-md-semibold",
   variants: {
     theme: {
       colorful: {
-        background: theme.colors.$primary50.value,
+        background: "$primary50",
         borderRadius: "0.375rem",
-        color: theme.colors.$primary700.value,
+        color: "$primary700",
       },
       light: {
-        color: theme.colors.$gray500.value,
+        color: "$gray500",
       },
     },
   },

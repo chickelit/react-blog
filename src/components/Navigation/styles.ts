@@ -25,7 +25,7 @@ export const NavItems = styled("ul", {
 export const HamburgerButton = styled("button", {
   width: "1.125rem",
   aspectRatio: "1 / 1",
-  color: theme.colors.$gray700.value,
+  color: "$gray700",
   cursor: "pointer",
   display: "none",
   svg: {
@@ -37,7 +37,7 @@ export const HamburgerButton = styled("button", {
 export const StyledNavigation = styled("nav", {
   height: "5rem",
   borderBottom: theme.borderStyles.gray100.value,
-  background: theme.colors.$gray50.value,
+  background: "$gray50",
   display: "grid",
   alignItems: "center",
   "@max1024": {

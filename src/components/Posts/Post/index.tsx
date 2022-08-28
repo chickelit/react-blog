@@ -7,7 +7,6 @@ import {
   StyledPost,
   LabelContainer,
   Label,
-  Category,
   Content,
   ReadPost,
 } from "./styles";
@@ -25,8 +24,8 @@ export function Post({ post }: IProps) {
           <Label>
             <p className="author">{post.author}</p>
             <p className="created-at">{post.createdAt.toLocaleDateString()}</p>
+            <p className="category">{post.category}</p>
           </Label>
-          <Category>{post.category}</Category>
         </LabelContainer>
       </CoverContainer>
       <Content>

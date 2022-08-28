@@ -1,4 +1,5 @@
 import { createStitches } from "@stitches/react";
+import { handler as typography } from "./utils/typographies";
 
 export const { styled, theme } = createStitches({
   theme: {
@@ -31,76 +32,6 @@ export const { styled, theme } = createStitches({
     infinite: "(min-width: 1201px)",
   },
   utils: {
-    typography: (label: string) => {
-      switch (label) {
-        case "display-lg-semibold": {
-          return {
-            fontWeight: 600,
-            fontSize: "3rem",
-            lineHeight: "3.75rem",
-          };
-        }
-
-        case "display-xs-semibold": {
-          return {
-            fontWeight: 600,
-            fontSize: "1.5rem",
-            lineHeight: "2rem",
-          };
-        }
-
-        case "text-x1-normal": {
-          return {
-            fontWeight: 400,
-            fontSize: "1.25rem",
-            lineHeight: "1.875rem",
-          };
-        }
-
-        case "text-md-normal": {
-          return {
-            fontWeight: 400,
-            fontSize: "1rem",
-            lineHeight: "1.5rem",
-          };
-        }
-
-        case "text-md-semibold": {
-          return {
-            fontWeight: 600,
-            fontSize: "1rem",
-            lineHeight: "1.5rem",
-          };
-        }
-
-        case "text-sm-normal": {
-          return {
-            fontWeight: 400,
-            fontSize: "0.875rem",
-            lineHeight: "1.25rem",
-          };
-        }
-
-        case "text-sm-medium": {
-          return {
-            fontWeight: 500,
-            fontSize: "0.875rem",
-            lineHeight: "1.25rem",
-          };
-        }
-
-        case "text-sm-semibold": {
-          return {
-            fontWeight: 600,
-            fontSize: "0.875rem",
-            lineHeight: "1.25rem",
-          };
-        }
-
-        default: {
-          throw new Error(`Invalid typography: ${label}`);
-        }
-      }
-    },
+    typography,
   },
 });

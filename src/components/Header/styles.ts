@@ -9,27 +9,50 @@ export const Grid = styled("div", {
 export const SupportingText = styled("div", {
   display: "grid",
   gap: "1.5rem",
-  h2: {
+  "h2.title": {
     typography: "display-lg-semibold",
     color: "$gray900",
   },
-  p: {
+  "p.subtitle": {
     wordBreak: "keep-all",
-    typography: "text-x1-normal",
+    typography: "text-xl-normal",
     color: "$gray500",
   },
 });
 
 export const EmailCapture = styled("form", {
-  maxWidth: "31.5rem",
+  maxWidth: "32rem",
   display: "grid",
-  gridTemplateColumns: "1fr 8rem",
+  gridTemplateColumns: "1fr max-content",
+  gridTemplateRows: "max-content",
+  alignItems:"start",
   gap: "1rem",
+});
+
+export const Heading = styled("div", {
+  display: "grid",
+  gap: "0.75rem",
+});
+
+export const InputContainer = styled("div", {
+  typography: "text-sm-normal",
+  color: "$gray600",
+  display: "grid",
+  gap: "0.375rem",
+  a: {
+    typography: "text-sm-normal",
+    color: "$gray600",
+    textDecoration: "underline",
+  },
 });
 
 export const StyledHeader = styled("header", {
   background: "$gray50",
-  "@max768": {
+  "p.sub-heading": {
+    typography: "text-md-semibold",
+    color: "$primary600",
+  },
+  "@max1024": {
     [`& ${Grid}`]: {
       padding: "4rem 1rem",
       [`${EmailCapture}`]: {

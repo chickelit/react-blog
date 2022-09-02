@@ -7,6 +7,7 @@ import { Footer } from "Src/components/Footer";
 import { Grid, StyledHome } from "./styles";
 import { Container } from "Src/components/Container";
 import React from "react";
+import { CTASection } from "Src/components/CTASection";
 
 export const HomePage: React.FC = () => {
   return (
@@ -20,6 +21,7 @@ export const HomePage: React.FC = () => {
           <Pagination id="pagination" />
         </Grid>
       </Container>
+      <CTASection />
       <Footer />
     </StyledHome>
   );

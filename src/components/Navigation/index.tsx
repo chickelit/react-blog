@@ -23,9 +23,12 @@ export const Navigation: React.FC = () => {
           </NavLink>
           <NavItems>
             <NavItem to="/">Home</NavItem>
+            <NavItem to="/">Products</NavItem>
+            <NavItem to="/">Resources</NavItem>
+            <NavItem to="/">Pricing</NavItem>
           </NavItems>
           <Buttons>
-            <Button theme={"light"}>Login</Button>
+            <Button light>Login</Button>
             <Button>Sign up</Button>
           </Buttons>
           <HamburgerButton>

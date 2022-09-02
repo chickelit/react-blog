@@ -1,3 +1,4 @@
+import { StyledCTASection } from "Src/components/CTASection/styles";
 import { styled } from "Src/stitches.config";
 
 export const Grid = styled("div", {
@@ -24,9 +25,16 @@ export const StyledHome = styled("div", {
   gridAutoRows: "max-content",
   "@max768": {
     [`& ${Grid}`]: {
-      padding: "4rem 1rem",
       gridTemplateColumns: "1fr",
       gridTemplateAreas: `"sidebar" "posts" "pagination"`,
     },
+  },
+  "@max1024": {
+    [`& ${Grid}`]: {
+      padding: "4rem 1rem",
+    },
+  },
+  [`& ${StyledCTASection}`]: {
+    paddingBottom: "6rem",
   },
 });

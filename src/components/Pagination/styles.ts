@@ -33,7 +33,7 @@ export const StyledPagination = styled("nav", {
   padding: "1.25rem 0 0",
   display: "grid",
   gridTemplateColumns: "max-content 1fr max-content",
-  justifyItems: "center",
+  placeItems: "center",
   [`& ${CurrentPageLabel}`]: {
     display: "none",
   },

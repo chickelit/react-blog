@@ -1,25 +1,40 @@
-import { styled } from "Src/stitches.config";
+import { styled, theme } from "Src/stitches.config";
 
 export const Button = styled("button", {
-  padding: "0.625rem 1.125rem",
   borderRadius: "0.5rem",
   typography: "text-md-semibold",
   cursor: "pointer",
+  color: "$white",
+  background: "$primary600",
+  whiteSpace: "nowrap",
   display: "grid",
   placeContent: "center",
   variants: {
-    theme: {
-      light: {
+    light: {
+      true: {
         color: "$gray500",
         background: "none",
       },
-      colorful: {
-        color: "$white",
-        background: "$primary600",
+    },
+    bordered: {
+      true: {
+        border: theme.borderStyles.gray300.value,
+        boxShadow: theme.shadows.xs.value,
+        borderRadius: "0.5rem",
+      },
+    },
+    paddingSize: {
+      small: {
+        padding: "0.625rem 1.125rem",
+      },
+      big: {
+        padding: "0.75rem 1.25rem",
       },
     },
   },
   defaultVariants: {
-    theme: "colorful",
+    light: false,
+    bordered: false,
+    paddingSize: "small",
   },
 });

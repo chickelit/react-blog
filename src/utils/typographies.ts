@@ -23,11 +23,19 @@ class Typography implements TypographyAttributes {
 
 const typographies = [
   new Typography({
-    name: "display-ll-semibold",
+    name: "display-lg-semibold",
     styles: {
       fontWeight: 600,
       fontSize: "3rem",
       lineHeight: "3.75rem",
+    },
+  }),
+  new Typography({
+    name: "display-sm-semibold",
+    styles: {
+      fontWeight: 600,
+      fontSize: "1.875rem",
+      lineHeight: "2.375rem",
     },
   }),
   new Typography({
@@ -88,14 +96,14 @@ const typographies = [
   }),
 ];
 
-export const handler = (name: Typography["name"]) => {
+const typographyNames = typographies.map((typography) => typography.name);
+
+export type TypographyName = typeof typographyNames[number];
+
+export const handler = (name: TypographyName) => {
   const typography = typographies.find(
     (typography) => typography.name === name
-  );
-
-  if (!typography) {
-    throw new Error(`Invalid typography: ${name}`);
-  }
+  ) as Typography;
 
   return typography.styles;
 };
